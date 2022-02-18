@@ -1,0 +1,17 @@
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\Repository.dll.config
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\Repository.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\Repository.pdb
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\EntityFramework.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\Model.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\Model.pdb
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\Model.dll.config
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\EntityFramework.xml
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.Migrations.mymigration.resources
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.csproj.GenerateResource.cache
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Pract-12_2\Repository\obj\Debug\Repository.pdb

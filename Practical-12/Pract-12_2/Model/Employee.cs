@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Model
+{
+    public class Employee
+    {
+        [Key]
+        public int ID { get; set; }
+        [Required]
+        public string FirstName { get; set; }
+
+        public string MiddleName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [Required]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+
+        public DateTime DOB { get; set; }
+        [Required]
+        [StringLength(10)]
+        public string MobileNumber { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Address { get; set; }
+        [Required]
+        public Decimal Salary { get; set; }
+        [Required]
+        [ForeignKey("DesignationID")]
+        public int Designation_ID { get; set; }
+
+        public Employee DesignationID { get; set; }
+    }
+}

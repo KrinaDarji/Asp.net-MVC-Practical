@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Model.App_Data.countEmp>
+
+@{
+    ViewBag.Title = "Count";
+}
+
+<h2>Count</h2>
+@foreach(var emp in Model)
+ {
+    <p>Designation:@emp.Designation_Name</p>
+    <p>Employee Count:@emp.count</p>
+ }

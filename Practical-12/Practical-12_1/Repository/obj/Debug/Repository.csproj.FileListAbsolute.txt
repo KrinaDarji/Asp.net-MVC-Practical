@@ -1,0 +1,15 @@
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\Repository.dll.config
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\Repository.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\Repository.pdb
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EmployeeModel.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EntityFramework.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EmployeeModel.pdb
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EmployeeModel.dll.config
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EntityFramework.xml
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\obj\Debug\Repository.dll
+C:\Users\krina\Desktop\ASP.Net MVC PRACTICAL\Practical-12_1\Repository\obj\Debug\Repository.pdb

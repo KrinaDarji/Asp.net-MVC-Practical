@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+  <h1 id="hello">Hello World</h1>
+  <label>
+      <input id="hello1" type="text" />
+      <button onclick="Printfunction()">Print Text</button>
+      <button onclick="myFunction()">Bold</button>
+      <button onclick="italic()">Italic</button>
+      <button onclick="underline()">Underline</button>
+      <button onclick="reset()">Reset</button>
+  </label>
+</div>
+<script>
+    function PrintFunction() {
+         document.getElementById('hello1').innerHTML;   
+    }
+    function myFunction() {
+        var b = document.getElementById('hello1');
+        b.style.fontWeight = 'bold';
+        b.style.textDecoration = '';
+        b.style.fontStyle = '';
+    }
+    function italic() {
+        var b = document.getElementById('hello1');
+        b.style.fontStyle = 'italic';
+        b.style.fontWeight = '';
+        b.style.textDecoration = '';
+    }
+    function underline() {
+        var b = document.getElementById('hello1');
+        b.style.textDecoration = 'underline';
+    }
+    function reset() {
+        var b = document.getElementById('hello1');
+        b.innerHTML = "Hello World";
+        b.style.textDecoration = '';
+        b.style.fontStyle = '';
+
+    }
+</script>

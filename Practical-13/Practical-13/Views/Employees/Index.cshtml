@@ -1,0 +1,129 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model IPagedList<Practical_13.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<hr />
+<input type="text" id="forsearch" name="forsearch" value="" />
+<hr />
+<table class="table" id="dataTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Age)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td id="dob">
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts
+{
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   
+    <script type="text/javascript">
+       
+            $(function() {
+                GetEmployee();
+                $("#forsearch").keyup(function () {
+                    GetEmployee();
+                });
+            });
+        function GetEmployee() {
+            var eName = $.trim($("#forsearch").val());
+            var page = getUrlVars()["Page"];
+            $.ajax({
+                type: "POST",
+                url: "/Employees/Search/",
+                data: "{eName:'" + eName + "',page:'" + page + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (employees) {
+                    var table = $("#dataTable");
+                    var div = $("#divpage");
+                  
+                    table.find("tr:not(:first)").remove();
+                    $.each(employees, function (i, emp) {
+                        var table = $("#dataTable");
+                       
+                        var row = table[0].insertRow(-1);
+                        //for formatting date in yyyy/mm/dd
+                        var dt = new Date(parseInt(emp.DOB.replace('/Date(', '')))
+                        var dtfinal = dateformate(dt.getFullYear(), 4) + '/' +
+                            dateformate(dt.getMonth() + 1, 2) + '/' +
+                            dateformate(dt.getDate(), 2)
+                        $(row).append("<td />");
+                        $(row).find("td").eq(0).html(emp.Name);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(1).html(dtfinal);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(2).html(emp.Age);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(3).html("<a href='/employees/Edit/" + emp.Id + "'>Edit</a>");
+                        $(row).append("<td />");
+                        $(row).find("td").eq(4).html("<a href='/employees/Details/" + emp.Id + "'>Details</a>");
+                        $(row).append("<td />");
+                        $(row).find("td").eq(5).html("<a href='/employees/Delete/" + emp.Id + "'>Delete</a>");
+                        
+                     
+                  });
+                }
+            });
+            
+        }
+        //function that format integers and add leading zeros
+        function dateformate(number, size) {
+            var s = "0000" + number;
+            return s.substr(s.length - size);
+        }
+        //for Obtaining query string
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+        
+    </script>
+}
+<div id="divpage">
+    @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page }))
+</div>
